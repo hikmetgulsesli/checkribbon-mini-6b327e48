@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "id": "rec-1001",
+      "name": "Verify record metadata",
+      "status": "complete",
+      "completed": true,
+      "notes": "",
+      "dueDate": "",
+      "updatedAt": ""
+    },
+    {
+      "id": "rec-1002",
+      "name": "Confirm checklist state",
+      "status": "active",
+      "completed": false,
+      "notes": "",
+      "dueDate": "",
+      "updatedAt": ""
+    },
+    {
+      "id": "rec-1003",
+      "name": "Review persisted preferences",
+      "status": "active",
+      "completed": false,
+      "notes": "",
+      "dueDate": "",
+      "updatedAt": ""
+    },
+    {
+      "id": "rec-1004",
+      "name": "Export summary snapshot",
+      "status": "pending",
+      "completed": false,
+      "notes": "",
+      "dueDate": "",
+      "updatedAt": ""
+    }
+  ],
+  "preferences": {
+    "autoSave": true,
+    "denseMode": false,
+    "defaultView": "list",
+    "notifications": true
+  },
+  "activity": []
+}
