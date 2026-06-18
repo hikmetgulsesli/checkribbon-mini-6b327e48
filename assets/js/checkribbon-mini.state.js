@@ -10,7 +10,7 @@
 
   function makeDefaultState(seed) {
     seed = seed || {};
-    var records = Array.isArray(seed.records) ? seed.records : [];
+    var records = Array.isArray(seed.records) ? seed.records.filter(function (r) { return r && typeof r === 'object'; }) : [];
     var firstActive = records.find(function (r) { return !r.completed; });
     var selectedId = firstActive ? firstActive.id : (records[0] && records[0].id) || null;
 

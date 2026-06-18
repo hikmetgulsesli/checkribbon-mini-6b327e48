@@ -122,7 +122,9 @@
     var list = el('ul', { className: 'record-list' });
     var query = (state.searchQuery || '').toLowerCase();
     var filtered = state.records.filter(function (r) {
-      return !query || r.name.toLowerCase().indexOf(query) !== -1 || r.id.toLowerCase().indexOf(query) !== -1;
+      var name = r && r.name ? String(r.name).toLowerCase() : '';
+      var id = r && r.id ? String(r.id).toLowerCase() : '';
+      return !query || name.indexOf(query) !== -1 || id.indexOf(query) !== -1;
     });
 
     if (filtered.length === 0) {
@@ -294,7 +296,9 @@
       var a = document.createElement('a');
       a.href = url;
       a.download = 'checkribbon-summary.json';
+      document.body.appendChild(a);
       a.click();
+      document.body.removeChild(a);
       URL.revokeObjectURL(url);
     });
 
@@ -431,6 +435,21 @@
   function render() {
     if (!stage || !settingsPanel || !statusBar) return;
 
+    // Preserve focus and text selection across re-renders.
+    var activeId = null;
+    var isTextEl = false;
+    var selectionStart = null;
+    var selectionEnd = null;
+    var active = document.activeElement;
+    if (active && active.dataset && active.dataset.actionId) {
+      activeId = active.dataset.actionId;
+      isTextEl = (active.tagName === 'INPUT' && /^(text|search|url|tel|password|email)$/.test(active.type)) || active.tagName === 'TEXTAREA';
+      if (isTextEl && typeof active.selectionStart === 'number' && typeof active.selectionEnd === 'number') {
+        selectionStart = active.selectionStart;
+        selectionEnd = active.selectionEnd;
+      }
+    }
+
     stage.innerHTML = '';
     settingsPanel.innerHTML = '';
     statusBar.innerHTML = '';
@@ -451,6 +470,21 @@
     // Apply density preference.
     var prefs = window.CRState.get().preferences;
     root.classList.toggle('is-dense', !!prefs.denseMode);
+
+    // Restore focus and cursor selection.
+    if (activeId) {
+      var elementToFocus = root.querySelector("[data-action-id='" + activeId + "']");
+      if (elementToFocus) {
+        elementToFocus.focus();
+        if (isTextEl && selectionStart !== null && selectionEnd !== null) {
+          try {
+            elementToFocus.setSelectionRange(selectionStart, selectionEnd);
+          } catch (e) {
+            // Ignore browser-specific exceptions.
+          }
+        }
+      }
+    }
   }
 
   function buildShell() {
@@ -480,7 +514,12 @@
     }
 
     fetch(SEED_URL)
-      .then(function (res) { return res.json(); })
+      .then(function (res) {
+        if (!res.ok) {
+          throw new Error('Network response was not ok: ' + res.statusText);
+        }
+        return res.json();
+      })
       .then(function (seed) {
         window.CRState.init(seed);
         buildShell();
