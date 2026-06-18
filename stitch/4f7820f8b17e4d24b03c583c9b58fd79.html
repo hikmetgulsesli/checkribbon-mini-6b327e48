@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CheckRibbon Mini - Record Editor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-tint": "#006a61",
+                      "background": "#f8f9ff",
+                      "on-primary-fixed-variant": "#005049",
+                      "tertiary-fixed": "#ffdbce",
+                      "surface-bright": "#f8f9ff",
+                      "on-tertiary-container": "#fffbff",
+                      "secondary-fixed": "#dae2fd",
+                      "outline": "#6d7a77",
+                      "secondary": "#565e74",
+                      "surface-container-low": "#eff4ff",
+                      "primary-container": "#008378",
+                      "inverse-surface": "#213145",
+                      "primary-fixed-dim": "#6bd8cb",
+                      "surface-container-highest": "#d3e4fe",
+                      "on-tertiary-fixed-variant": "#773215",
+                      "on-primary": "#ffffff",
+                      "inverse-primary": "#6bd8cb",
+                      "surface-container": "#e5eeff",
+                      "tertiary-fixed-dim": "#ffb59a",
+                      "error-container": "#ffdad6",
+                      "on-background": "#0b1c30",
+                      "primary-fixed": "#89f5e7",
+                      "on-primary-container": "#f4fffc",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-fixed": "#131b2e",
+                      "surface-variant": "#d3e4fe",
+                      "primary": "#00685f",
+                      "secondary-fixed-dim": "#bec6e0",
+                      "on-surface": "#0b1c30",
+                      "surface": "#f8f9ff",
+                      "on-secondary-container": "#5c647a",
+                      "error": "#ba1a1a",
+                      "tertiary": "#924628",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error": "#ffffff",
+                      "inverse-on-surface": "#eaf1ff",
+                      "surface-container-high": "#dce9ff",
+                      "tertiary-container": "#b05e3d",
+                      "on-primary-fixed": "#00201d",
+                      "on-tertiary-fixed": "#370e00",
+                      "secondary-container": "#dae2fd",
+                      "on-error-container": "#93000a",
+                      "on-surface-variant": "#3d4947",
+                      "on-secondary-fixed-variant": "#3f465c",
+                      "on-secondary": "#ffffff",
+                      "surface-dim": "#cbdbf5",
+                      "outline-variant": "#bcc9c6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "sm": "8px",
+                      "xs": "4px",
+                      "container-padding": "16px",
+                      "md": "12px",
+                      "lg": "16px",
+                      "gutter": "8px",
+                      "unit": "4px"
+              },
+              "fontFamily": {
+                      "mono-data": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-sm": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "label-xs": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "mono-data": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "18px",
+                              {
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-sm": [
+                              "13px",
+                              {
+                                      "lineHeight": "18px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-xs": [
+                              "11px",
+                              {
+                                      "lineHeight": "14px",
+                                      "letterSpacing": "0.03em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md overflow-hidden">
+<!-- TopAppBar -->
+<header class="bg-surface text-primary border-b border-outline-variant flat no shadows flex justify-between items-center h-8 px-lg w-full flex-shrink-0 z-20 sticky top-0">
+<div class="flex items-center gap-4">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">CheckRibbon Mini</span>
+<div class="flex items-center gap-xs bg-tertiary-container/10 px-sm py-0.5 rounded-full border border-tertiary-container/20">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container" data-icon="edit_note">edit_note</span>
+<span class="font-label-xs text-label-xs text-tertiary-container uppercase tracking-wider">Unsaved Changes</span>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<button class="flex items-center justify-center text-on-surface-variant hover:text-primary active:opacity-80 transition-colors w-6 h-6">
+<span class="material-symbols-outlined text-[18px]" data-icon="notifications">notifications</span>
+</button>
+<button class="flex items-center justify-center text-on-surface-variant hover:text-primary active:opacity-80 transition-colors w-6 h-6">
+<span class="material-symbols-outlined text-[18px]" data-icon="sync">sync</span>
+</button>
+<div class="h-4 w-px bg-outline-variant mx-xs"></div>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors active:opacity-80 hidden md:block">Export</button>
+<button class="bg-primary text-on-primary hover:bg-surface-tint font-label-md text-label-md px-sm h-[24px] rounded-DEFAULT flex items-center justify-center transition-colors active:opacity-80">
+                Create Record
+            </button>
+<img alt="User Avatar" class="w-6 h-6 rounded-full ml-sm object-cover border border-outline-variant" data-alt="A small, professional avatar of a user in a highly structured, minimalist interface. Light mode aesthetic, sharp and clean." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg0HsukpeaFhv-DOou5DSXefFlR1LI_IfXyB2VoGIfDJPyJ6iiCw6SradOvuDes1necCIAirfyhfW50wJ1jG01m9uxByaXIJhIg1DkRnqEMJpnXoe7gcuacotEv99GAfW2IHLOtE0pqwovdRxiFvRIK6RDAO-LshW0Jj3dwDmkd1FfKDA7Gh2ZiiUAz3UghC0aGoxo9K8LRLFM3RUuKt5xao1bSTx2YRuByhRGcy9E12iza58M_iVZtiYU3Q89C3Ug-aBkxN7xKHo"/>
+</div>
+</header>
+<div class="flex flex-1 overflow-hidden">
+<!-- SideNavBar (Suppressed for transactional/task-focused page) -->
+<!-- Suppressing Side Nav as per rules: Task-focused sub-page (Record Editor) implies departure from main flow. -->
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto bg-surface-container-lowest relative flex justify-center">
+<div class="w-full max-w-2xl px-container-padding py-8 pb-32 flex flex-col gap-6">
+<!-- Page Header -->
+<div class="flex flex-col gap-xs mb-4">
+<button class="flex items-center gap-xs text-secondary hover:text-primary font-label-md text-label-md w-fit transition-colors mb-2">
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_back">arrow_back</span>
+                        Back to Editor
+                    </button>
+<h1 class="font-headline-sm text-[24px] leading-tight font-bold text-on-surface">Edit Record: CR-10492</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Update the details and checklist items for this specific operation record. Required fields are marked.</p>
+</div>
+<!-- Form Section -->
+<form class="flex flex-col gap-lg bg-surface border border-outline-variant rounded-lg p-lg">
+<!-- Basic Info -->
+<div class="flex flex-col gap-md">
+<h2 class="font-label-md text-label-md text-on-surface border-b border-outline-variant pb-xs">Record Metadata</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Record Name (Error State) -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1">
+                                    Record Name
+                                    <span class="text-error">*</span>
+</label>
+<input class="h-[32px] px-sm border border-error bg-error-container/10 focus:outline-none focus:ring-2 focus:ring-error/20 focus:border-error rounded-DEFAULT font-body-md text-body-md text-on-surface transition-all" placeholder="Enter record name" type="text" value=""/>
+<span class="font-label-xs text-label-xs text-error flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[12px]" data-icon="error">error</span>
+                                    Record Name is required.
+                                </span>
+</div>
+<!-- Category -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1">
+                                    Category
+                                </label>
+<div class="relative">
+<select class="h-[32px] w-full px-sm border border-outline-variant bg-surface focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary rounded-DEFAULT font-body-md text-body-md text-on-surface transition-all appearance-none">
+<option value="routine">Routine Check</option>
+<option selected="" value="incident">Incident Report</option>
+<option value="audit">Compliance Audit</option>
+</select>
+<div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_drop_down">arrow_drop_down</span>
+</div>
+</div>
+</div>
+<!-- Due Date -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1">
+                                    Due Date
+                                    <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="h-[32px] w-full px-sm border border-outline-variant bg-surface focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary rounded-DEFAULT font-body-md text-body-md text-on-surface transition-all" type="date" value="2023-11-15"/>
+</div>
+</div>
+<!-- Assignee -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1">
+                                    Assignee (Optional)
+                                </label>
+<input class="h-[32px] px-sm border border-outline-variant bg-surface focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary rounded-DEFAULT font-body-md text-body-md text-on-surface transition-all" placeholder="Search users..." type="text" value="J. Doe"/>
+</div>
+</div>
+</div>
+<!-- Checklist -->
+<div class="flex flex-col gap-md mt-4 pt-4 border-t border-outline-variant">
+<div class="flex justify-between items-end pb-xs border-b border-outline-variant">
+<h2 class="font-label-md text-label-md text-on-surface">Action Checklist</h2>
+<span class="font-label-xs text-label-xs text-secondary bg-surface-container py-0.5 px-2 rounded-full">1/4 Completed</span>
+</div>
+<div class="flex flex-col gap-0 border border-outline-variant rounded-lg overflow-hidden bg-surface">
+<!-- Item 1 (Completed) -->
+<div class="flex items-start gap-sm p-sm border-b border-outline-variant hover:bg-surface-container-low transition-colors group">
+<div class="mt-1">
+<input checked="" class="w-4 h-4 text-primary bg-surface border-outline-variant rounded focus:ring-primary focus:ring-2" type="checkbox"/>
+</div>
+<div class="flex-1 flex flex-col gap-1">
+<input class="w-full bg-transparent border-none focus:ring-0 p-0 font-body-md text-body-md text-secondary line-through" type="text" value="Verify system logs from previous shift"/>
+</div>
+<button class="text-outline hover:text-error opacity-0 group-hover:opacity-100 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[16px]" data-icon="delete">delete</span>
+</button>
+</div>
+<!-- Item 2 -->
+<div class="flex items-start gap-sm p-sm border-b border-outline-variant hover:bg-surface-container-low transition-colors bg-surface-container-lowest focus-within:bg-surface-container-low group">
+<div class="mt-1">
+<input class="w-4 h-4 text-primary bg-surface border-outline-variant rounded focus:ring-primary focus:ring-2" type="checkbox"/>
+</div>
+<div class="flex-1 flex flex-col gap-1">
+<input class="w-full bg-transparent border-none focus:ring-0 p-0 font-body-md text-body-md text-on-surface" type="text" value="Update client configuration parameters"/>
+<input class="w-full bg-transparent border-none focus:ring-0 p-0 font-body-sm text-body-sm text-on-surface-variant placeholder-on-surface-variant/50" placeholder="Add notes (optional)..." type="text"/>
+</div>
+<button class="text-outline hover:text-error opacity-0 group-hover:opacity-100 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[16px]" data-icon="delete">delete</span>
+</button>
+</div>
+<!-- Item 3 -->
+<div class="flex items-start gap-sm p-sm border-b border-outline-variant hover:bg-surface-container-low transition-colors bg-surface-container-lowest focus-within:bg-surface-container-low group">
+<div class="mt-1">
+<input class="w-4 h-4 text-primary bg-surface border-outline-variant rounded focus:ring-primary focus:ring-2" type="checkbox"/>
+</div>
+<div class="flex-1 flex flex-col gap-1">
+<input class="w-full bg-transparent border-none focus:ring-0 p-0 font-body-md text-body-md text-on-surface" type="text" value="Run diagnostic suite A-1"/>
+<input class="w-full bg-transparent border-none focus:ring-0 p-0 font-body-sm text-body-sm text-on-surface-variant placeholder-on-surface-variant/50" placeholder="Add notes (optional)..." type="text"/>
+</div>
+<button class="text-outline hover:text-error opacity-0 group-hover:opacity-100 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[16px]" data-icon="delete">delete</span>
+</button>
+</div>
+<!-- Item 4 (Empty/Add new) -->
+<div class="flex items-start gap-sm p-sm hover:bg-surface-container-low transition-colors bg-surface-container-lowest focus-within:bg-surface-container-low">
+<div class="mt-1 text-outline">
+<span class="material-symbols-outlined text-[16px]" data-icon="add">add</span>
+</div>
+<div class="flex-1 flex flex-col gap-1">
+<input class="w-full bg-transparent border-none focus:ring-0 p-0 font-body-md text-body-md text-on-surface placeholder-outline" placeholder="Add new checklist item..." type="text"/>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</main>
+</div>
+<!-- Sticky Footer (Save/Cancel) -->
+<div class="fixed bottom-0 left-0 right-0 border-t border-outline-variant bg-surface z-30 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)]">
+<div class="max-w-2xl mx-auto w-full px-container-padding h-16 flex items-center justify-between">
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px] text-error" data-icon="error">error</span>
+                Cannot save: 1 error found
+            </div>
+<div class="flex items-center gap-sm">
+<button class="h-[32px] px-lg border border-outline-variant text-on-surface bg-surface hover:bg-surface-container-low font-label-md text-label-md rounded-DEFAULT transition-colors active:scale-[0.98]" type="button">
+                    Cancel
+                </button>
+<button class="h-[32px] px-lg bg-primary text-on-primary hover:bg-surface-tint font-label-md text-label-md rounded-DEFAULT transition-colors flex items-center gap-xs active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[16px]" data-icon="save">save</span>
+                    Save Changes
+                </button>
+</div>
+</div>
+</div>
+</body></html>

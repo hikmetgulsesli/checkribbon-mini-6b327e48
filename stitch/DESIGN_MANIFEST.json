@@ -1,0 +1,46 @@
+[
+  {
+    "screenId": "4f7820f8b17e4d24b03c583c9b58fd79",
+    "title": "Record Editor - CheckRibbon Mini",
+    "htmlFile": "4f7820f8b17e4d24b03c583c9b58fd79.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzk5NGFkMGI4ZTUyMzQ4Zjk4YTZkZmQ1Nzc4NWIyOGNiEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMxOTYzOTAwMDYxMzQ1MTIwOTYw&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/checkribbon-mini-6b327e48/stitch/4f7820f8b17e4d24b03c583c9b58fd79.html",
+    "surfaceIds": [
+      "SURF_RECORD_EDITOR"
+    ]
+  },
+  {
+    "screenId": "22da64dbd0df4351bb2e62f1c3fc23fa",
+    "title": "Insights - CheckRibbon Mini",
+    "htmlFile": "22da64dbd0df4351bb2e62f1c3fc23fa.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzFlZGM2ZDQ3NjIyNDRmZTM5Y2UxMWEyODQ3YzlkYzNlEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMxOTYzOTAwMDYxMzQ1MTIwOTYw&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/checkribbon-mini-6b327e48/stitch/22da64dbd0df4351bb2e62f1c3fc23fa.html",
+    "surfaceIds": [
+      "SURF_INSIGHTS"
+    ]
+  },
+  {
+    "screenId": "6f80bf8ef3fc40bbab8feb3f30ec478c",
+    "title": "Settings and Preferences - CheckRibbon Mini",
+    "htmlFile": "6f80bf8ef3fc40bbab8feb3f30ec478c.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzBkNDBmY2ExZGRhZDQ1NzBhMmFmMGY5MGUxY2VmYTFjEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMxOTYzOTAwMDYxMzQ1MTIwOTYw&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/checkribbon-mini-6b327e48/stitch/6f80bf8ef3fc40bbab8feb3f30ec478c.html",
+    "surfaceIds": [
+      "SURF_SETTINGS_AND_PREFERENCES"
+    ]
+  },
+  {
+    "screenId": "b43bf6560a964c44b950464823531a54",
+    "title": "Record Operations - CheckRibbon Mini",
+    "htmlFile": "b43bf6560a964c44b950464823531a54.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzYyNzA4NmNhN2RhYjQ1N2NhNGQ5YjhlOTY1OTJiOTIyEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMxOTYzOTAwMDYxMzQ1MTIwOTYw&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/checkribbon-mini-6b327e48/stitch/b43bf6560a964c44b950464823531a54.html",
+    "surfaceIds": [
+      "SURF_RECORD_OPERATIONS"
+    ]
+  }
+]

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CheckRibbon Mini - Insights</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#006a61",
+                        "background": "#f8f9ff",
+                        "on-primary-fixed-variant": "#005049",
+                        "tertiary-fixed": "#ffdbce",
+                        "surface-bright": "#f8f9ff",
+                        "on-tertiary-container": "#fffbff",
+                        "secondary-fixed": "#dae2fd",
+                        "outline": "#6d7a77",
+                        "secondary": "#565e74",
+                        "surface-container-low": "#eff4ff",
+                        "primary-container": "#008378",
+                        "inverse-surface": "#213145",
+                        "primary-fixed-dim": "#6bd8cb",
+                        "surface-container-highest": "#d3e4fe",
+                        "on-tertiary-fixed-variant": "#773215",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#6bd8cb",
+                        "surface-container": "#e5eeff",
+                        "tertiary-fixed-dim": "#ffb59a",
+                        "error-container": "#ffdad6",
+                        "on-background": "#0b1c30",
+                        "primary-fixed": "#89f5e7",
+                        "on-primary-container": "#f4fffc",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#131b2e",
+                        "surface-variant": "#d3e4fe",
+                        "primary": "#00685f",
+                        "secondary-fixed-dim": "#bec6e0",
+                        "on-surface": "#0b1c30",
+                        "surface": "#f8f9ff",
+                        "on-secondary-container": "#5c647a",
+                        "error": "#ba1a1a",
+                        "tertiary": "#924628",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "surface-container-high": "#dce9ff",
+                        "tertiary-container": "#b05e3d",
+                        "on-primary-fixed": "#00201d",
+                        "on-tertiary-fixed": "#370e00",
+                        "secondary-container": "#dae2fd",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#3d4947",
+                        "on-secondary-fixed-variant": "#3f465c",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#cbdbf5",
+                        "outline-variant": "#bcc9c6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sm": "8px",
+                        "xs": "4px",
+                        "container-padding": "16px",
+                        "md": "12px",
+                        "lg": "16px",
+                        "gutter": "8px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "mono-data": ["JetBrains Mono"],
+                        "headline-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "label-xs": ["Inter"]
+                    },
+                    "fontSize": {
+                        "mono-data": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+                        "label-xs": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md h-screen flex overflow-hidden">
+<!-- SideNavBar (WEB) -->
+<nav class="hidden md:flex flex-col h-screen w-64 border-r border-outline-variant bg-surface-container-lowest p-sm gap-xs shrink-0">
+<!-- Header -->
+<div class="flex items-center gap-md px-md py-lg mb-sm">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<img alt="User Profile" class="w-full h-full object-cover rounded-full" data-alt="A stylized geometric 'C' logo in a crisp corporate style, designed for a modern software application. The background is a stark, high-contrast white. The logo mark itself is rendered in a deep emerald green, evoking feelings of stability, security, and precision. It sits inside a perfect circle, giving it a balanced and complete appearance. The aesthetic is extremely clean and minimal, completely avoiding any 3D effects or gradients to maintain a flat, vector-like quality. This flat design is essential for its intended use in a dense, data-heavy user interface where clarity and simplicity are paramount." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcfA9ay4Was8Gy2YZ0TDKQK44iXiqFGQNIenYu2eqM6xZT8mOmsj9K4ld6CmRHIXZSwK9zxMsxxKoQfzu4wQ_N9ibhNEGuNLeAU5pS-r8Mx0ixOM7iTM7ysLr3iOgN1COPptaIVG3hL5PoPHXIc6zEy8tsg2JqQvSIrnGSA72NUVWMmGcu3PlZWE4ufhzRbBU1g9iyzXVxQaoCwa8ALZpbc_LGorBp0hWVEvzhagJKDxpqhmOn-tp6PZOv4thvZiU0AlAuguXIeR0"/>
+</div>
+<div>
+<h1 class="font-headline-sm text-headline-sm font-bold text-primary">CheckRibbon</h1>
+<p class="font-label-xs text-label-xs text-on-surface-variant">Mini v1.2</p>
+</div>
+</div>
+<!-- CTA -->
+<div class="px-xs mb-md">
+<button class="w-full h-8 bg-primary hover:bg-primary-fixed-dim text-on-primary font-label-md text-label-md rounded flex items-center justify-center gap-xs transition-colors duration-150 active:scale-[0.98]">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                Create Record
+            </button>
+</div>
+<!-- Main Tabs -->
+<div class="flex-1 flex flex-col gap-xs">
+<a class="flex items-center gap-md px-md h-8 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-colors duration-150 active:scale-[0.98]" href="#">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+<span class="font-body-sm text-body-sm">Operations</span>
+</a>
+<a class="flex items-center gap-md px-md h-8 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-colors duration-150 active:scale-[0.98]" href="#">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+<span class="font-body-sm text-body-sm">Editor</span>
+</a>
+<a class="flex items-center gap-md px-md h-8 bg-secondary-container text-on-secondary-container font-medium rounded-lg transition-colors duration-150 active:scale-[0.98]" href="#">
+<span class="material-symbols-outlined text-[20px] fill">analytics</span>
+<span class="font-body-sm text-body-sm">Insights</span>
+</a>
+<a class="flex items-center gap-md px-md h-8 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-colors duration-150 active:scale-[0.98]" href="#">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+<span class="font-body-sm text-body-sm">Settings</span>
+</a>
+</div>
+<!-- Footer Tabs -->
+<div class="mt-auto flex flex-col gap-xs pt-sm border-t border-outline-variant">
+<a class="flex items-center gap-md px-md h-8 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-colors duration-150 active:scale-[0.98]" href="#">
+<span class="material-symbols-outlined text-[20px]">help_outline</span>
+<span class="font-body-sm text-body-sm">Help</span>
+</a>
+<a class="flex items-center gap-md px-md h-8 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-colors duration-150 active:scale-[0.98]" href="#">
+<span class="material-symbols-outlined text-[20px]">sensors</span>
+<span class="font-body-sm text-body-sm">Status</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col min-w-0 bg-background">
+<!-- TopAppBar (MOBILE & WEB context) -->
+<header class="flex justify-between items-center h-8 px-lg w-full bg-surface border-b border-outline-variant shrink-0">
+<!-- Brand / Mobile Menu (Hidden on Desktop to avoid duplicate logo) -->
+<div class="md:hidden flex items-center gap-sm">
+<span class="material-symbols-outlined">menu</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">CheckRibbon Mini</span>
+</div>
+<!-- Left Side Search/Actions (Desktop) -->
+<div class="hidden md:flex items-center gap-sm">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2 text-on-surface-variant text-[16px]">search</span>
+<input class="h-6 pl-8 pr-2 w-48 bg-surface-container-low border border-outline-variant rounded font-body-sm text-body-sm focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all placeholder:text-on-surface-variant" placeholder="Search..." type="text"/>
+</div>
+</div>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-sm">
+<button class="md:hidden h-6 px-2 bg-primary text-on-primary font-label-xs text-label-xs rounded flex items-center justify-center transition-colors active:opacity-80">
+                    Create
+                </button>
+<button class="hidden md:flex h-6 px-3 border border-outline-variant hover:bg-surface-container-low text-on-surface font-label-xs text-label-xs rounded items-center justify-center transition-colors active:opacity-80">
+                    Export Summary
+                </button>
+<div class="flex items-center gap-xs border-l border-outline-variant pl-sm ml-xs">
+<button class="w-6 h-6 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:opacity-80">
+<span class="material-symbols-outlined text-[18px]">notifications</span>
+</button>
+<button class="w-6 h-6 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors active:opacity-80">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+</button>
+</div>
+<div class="ml-sm w-6 h-6 rounded-full bg-surface-variant border border-outline-variant overflow-hidden shrink-0 hidden md:block">
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="A small, professional headshot photo of an adult in business casual attire, intended to be used as a tiny avatar in a dense software interface. The background is a neutral, light gray to ensure high contrast and clear legibility at very small sizes. The lighting is even and soft, typical of standard corporate portraiture, avoiding dramatic shadows. The image focuses tightly on the face and shoulders. The aesthetic is clean, standard, and functional, adhering to typical enterprise application standards for user profile pictures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoDrsnLzDnmyXg_56T5U2yCvVyhCMAovuMz18IZ4z5exYafyW2W4BS9PdzMOyw10LjJmjLUe8dhxMFsr7KiRhOubuCMqqPedxuBE2E10bmCJiO8FqUaANU40WBHEtZRKFcPcrwoc5jYmlY81PBNeSB2n4p2dzGq-3PIhTYyujbYfRs-8zohbXlWzB6XGhSBfI6WYchbTzNs0msyM_UDrVOZR7ZES78VUP6-lv9Gz006a1fi_WbSzAuMr2RJFpOXyGj3YKkNjUZfI8"/>
+</div>
+</div>
+</header>
+<!-- Canvas -->
+<main class="flex-1 overflow-auto p-container-padding">
+<div class="max-w-6xl mx-auto flex flex-col gap-lg">
+<!-- Page Header -->
+<div class="flex justify-between items-end mb-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-background">Operational Insights</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Real-time metrics and system health overview.</p>
+</div>
+<!-- Mobile Export Action -->
+<button class="md:hidden h-8 px-md border border-outline-variant bg-surface hover:bg-surface-container-low text-on-surface font-label-md text-label-md rounded flex items-center justify-center transition-colors active:opacity-80">
+                        Export
+                    </button>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-lg auto-rows-min">
+<!-- Top Row: Metrics (Span 8) & Actionable Follow-ups (Span 4) -->
+<div class="md:col-span-8 flex flex-col gap-lg">
+<!-- Small Metric Cards -->
+<div class="grid grid-cols-2 gap-md">
+<!-- Throughput Card -->
+<div class="bg-surface border border-outline-variant rounded p-md flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<span class="font-label-md text-label-md text-on-surface-variant">Daily Throughput</span>
+<span class="material-symbols-outlined text-[16px] text-primary">trending_up</span>
+</div>
+<div class="flex items-end gap-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-background">1,248</span>
+<span class="font-mono-data text-mono-data text-primary mb-1">+12% vs yday</span>
+</div>
+<!-- Tiny Sparkline Mock -->
+<div class="h-6 w-full flex items-end gap-1 mt-auto">
+<div class="w-1/6 bg-surface-variant h-1/3 rounded-t-sm"></div>
+<div class="w-1/6 bg-surface-variant h-1/2 rounded-t-sm"></div>
+<div class="w-1/6 bg-surface-variant h-2/3 rounded-t-sm"></div>
+<div class="w-1/6 bg-surface-variant h-3/4 rounded-t-sm"></div>
+<div class="w-1/6 bg-surface-variant h-5/6 rounded-t-sm"></div>
+<div class="w-1/6 bg-primary-container h-full rounded-t-sm"></div>
+</div>
+</div>
+<!-- Error Rate Card -->
+<div class="bg-surface border border-outline-variant rounded p-md flex flex-col gap-sm">
+<div class="flex justify-between items-start">
+<span class="font-label-md text-label-md text-on-surface-variant">System Error Rate</span>
+<span class="material-symbols-outlined text-[16px] text-error">warning</span>
+</div>
+<div class="flex items-end gap-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-background">0.42%</span>
+<span class="font-mono-data text-mono-data text-on-surface-variant mb-1">Stable</span>
+</div>
+<!-- Tiny Sparkline Mock -->
+<div class="h-6 w-full flex items-end gap-1 mt-auto">
+<div class="w-1/6 bg-surface-variant h-1/4 rounded-t-sm"></div>
+<div class="w-1/6 bg-surface-variant h-[20%] rounded-t-sm"></div>
+<div class="w-1/6 bg-error-container h-1/2 rounded-t-sm"></div>
+<div class="w-1/6 bg-surface-variant h-1/4 rounded-t-sm"></div>
+<div class="w-1/6 bg-surface-variant h-[15%] rounded-t-sm"></div>
+<div class="w-1/6 bg-surface-variant h-[20%] rounded-t-sm"></div>
+</div>
+</div>
+</div>
+<!-- State Distribution Chart Area -->
+<div class="bg-surface border border-outline-variant rounded p-md flex-1 min-h-[200px] flex flex-col">
+<div class="flex justify-between items-center mb-md border-b border-outline-variant pb-xs">
+<h3 class="font-label-md text-label-md text-on-surface font-semibold">State Distribution</h3>
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+<!-- Compact Bar Chart Visual -->
+<div class="flex-1 flex flex-col justify-center gap-md py-sm">
+<div class="flex flex-col gap-xs">
+<div class="flex justify-between font-mono-data text-mono-data text-on-surface-variant">
+<span>Completed (840)</span>
+<span>70%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[70%]"></div>
+</div>
+</div>
+<div class="flex flex-col gap-xs">
+<div class="flex justify-between font-mono-data text-mono-data text-on-surface-variant">
+<span>Pending Review (240)</span>
+<span>20%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary-fixed w-[20%]"></div>
+</div>
+</div>
+<div class="flex flex-col gap-xs">
+<div class="flex justify-between font-mono-data text-mono-data text-on-surface-variant">
+<span>Blocked / Error (120)</span>
+<span>10%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-error-container w-[10%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Actionable Follow-ups (Span 4) -->
+<div class="md:col-span-4 bg-error-container/20 border border-error/20 rounded flex flex-col overflow-hidden">
+<div class="p-md border-b border-error/10 bg-error-container/30">
+<div class="flex items-center gap-xs text-error">
+<span class="material-symbols-outlined text-[18px]">assignment_late</span>
+<h3 class="font-label-md text-label-md font-semibold">Action Required</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">3 records require attention</p>
+</div>
+<div class="flex-1 flex flex-col p-xs">
+<!-- List Items -->
+<a class="flex items-start gap-sm p-sm hover:bg-surface-container-low rounded transition-colors group" href="#">
+<div class="mt-0.5 w-2 h-2 rounded-full bg-error shrink-0"></div>
+<div class="flex flex-col">
+<span class="font-label-xs text-label-xs text-on-surface font-semibold group-hover:text-primary transition-colors">REC-9021</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Validation failed on step 4</span>
+</div>
+</a>
+<a class="flex items-start gap-sm p-sm hover:bg-surface-container-low rounded transition-colors group" href="#">
+<div class="mt-0.5 w-2 h-2 rounded-full bg-error shrink-0"></div>
+<div class="flex flex-col">
+<span class="font-label-xs text-label-xs text-on-surface font-semibold group-hover:text-primary transition-colors">REC-8842</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Missing required signatures</span>
+</div>
+</a>
+<a class="flex items-start gap-sm p-sm hover:bg-surface-container-low rounded transition-colors group" href="#">
+<div class="mt-0.5 w-2 h-2 rounded-full bg-error shrink-0"></div>
+<div class="flex flex-col">
+<span class="font-label-xs text-label-xs text-on-surface font-semibold group-hover:text-primary transition-colors">REC-8801</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Sync timeout with external DB</span>
+</div>
+</a>
+</div>
+</div>
+<!-- Bottom Row: Recent Activity Feed (Span 12) -->
+<div class="md:col-span-12 bg-surface border border-outline-variant rounded flex flex-col">
+<div class="p-sm border-b border-outline-variant flex justify-between items-center bg-surface-container-lowest rounded-t">
+<h3 class="font-label-md text-label-md text-on-surface font-semibold px-xs">Recent Activity</h3>
+<button class="text-on-surface-variant hover:text-primary font-label-xs text-label-xs px-xs transition-colors">View All</button>
+</div>
+<!-- Table Layout for Activity -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-outline-variant bg-surface-container-low">
+<th class="font-label-xs text-label-xs text-on-surface-variant font-medium py-xs px-md w-8">Type</th>
+<th class="font-label-xs text-label-xs text-on-surface-variant font-medium py-xs px-md">Description</th>
+<th class="font-label-xs text-label-xs text-on-surface-variant font-medium py-xs px-md">User</th>
+<th class="font-label-xs text-label-xs text-on-surface-variant font-medium py-xs px-md text-right">Time</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface">
+<tr class="border-b border-outline-variant/50 hover:bg-surface-container-lowest transition-colors cursor-pointer">
+<td class="py-sm px-md text-primary"><span class="material-symbols-outlined text-[16px]">check_circle</span></td>
+<td class="py-sm px-md">Checklist 'Onboarding Q3' completed</td>
+<td class="py-sm px-md font-mono-data text-mono-data text-on-surface-variant">sys_admin</td>
+<td class="py-sm px-md text-right text-on-surface-variant font-mono-data text-mono-data">2m ago</td>
+</tr>
+<tr class="border-b border-outline-variant/50 hover:bg-surface-container-lowest transition-colors cursor-pointer bg-surface-container-low/30">
+<td class="py-sm px-md text-secondary"><span class="material-symbols-outlined text-[16px]">note_add</span></td>
+<td class="py-sm px-md">Record REC-9022 created</td>
+<td class="py-sm px-md font-mono-data text-mono-data text-on-surface-variant">api_worker</td>
+<td class="py-sm px-md text-right text-on-surface-variant font-mono-data text-mono-data">15m ago</td>
+</tr>
+<tr class="border-b border-outline-variant/50 hover:bg-surface-container-lowest transition-colors cursor-pointer">
+<td class="py-sm px-md text-secondary"><span class="material-symbols-outlined text-[16px]">edit</span></td>
+<td class="py-sm px-md">Status updated for REC-9018</td>
+<td class="py-sm px-md font-mono-data text-mono-data text-on-surface-variant">j.doe</td>
+<td class="py-sm px-md text-right text-on-surface-variant font-mono-data text-mono-data">1h ago</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors cursor-pointer bg-surface-container-low/30">
+<td class="py-sm px-md text-primary"><span class="material-symbols-outlined text-[16px]">check_circle</span></td>
+<td class="py-sm px-md">Checklist 'Daily Sync' completed</td>
+<td class="py-sm px-md font-mono-data text-mono-data text-on-surface-variant">m.smith</td>
+<td class="py-sm px-md text-right text-on-surface-variant font-mono-data text-mono-data">3h ago</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

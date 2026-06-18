@@ -1,0 +1,38 @@
+[
+  {
+    "screenId": "4f7820f8b17e4d24b03c583c9b58fd79",
+    "name": "Record Editor - CheckRibbon Mini",
+    "type": "form",
+    "description": "Record Editor - CheckRibbon Mini screen",
+    "surfaceIds": [
+      "SURF_RECORD_EDITOR"
+    ]
+  },
+  {
+    "screenId": "22da64dbd0df4351bb2e62f1c3fc23fa",
+    "name": "Insights - CheckRibbon Mini",
+    "type": "app-screen",
+    "description": "Insights - CheckRibbon Mini screen",
+    "surfaceIds": [
+      "SURF_INSIGHTS"
+    ]
+  },
+  {
+    "screenId": "6f80bf8ef3fc40bbab8feb3f30ec478c",
+    "name": "Settings and Preferences - CheckRibbon Mini",
+    "type": "settings",
+    "description": "Settings and Preferences - CheckRibbon Mini screen",
+    "surfaceIds": [
+      "SURF_SETTINGS_AND_PREFERENCES"
+    ]
+  },
+  {
+    "screenId": "b43bf6560a964c44b950464823531a54",
+    "name": "Record Operations - CheckRibbon Mini",
+    "type": "app-screen",
+    "description": "Record Operations - CheckRibbon Mini screen",
+    "surfaceIds": [
+      "SURF_RECORD_OPERATIONS"
+    ]
+  }
+]
