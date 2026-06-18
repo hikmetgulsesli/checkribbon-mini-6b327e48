@@ -1,0 +1,1158 @@
+[
+  {
+    "screenId": "4f7820f8b17e4d24b03c583c9b58fd79",
+    "screenTitle": "Record Editor - CheckRibbon Mini",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 175
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "Export",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "Create Record",
+        "line": 183
+      },
+      {
+        "type": "button",
+        "label": "Back to Editor",
+        "line": 197
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 272
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 285
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 298
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 325
+      },
+      {
+        "type": "button",
+        "label": "Changes",
+        "line": 328
+      },
+      {
+        "type": "input",
+        "label": "Enter record name",
+        "inputType": "text",
+        "placeholder": "Enter record name",
+        "line": 216
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 228
+      },
+      {
+        "type": "input",
+        "label": "date",
+        "inputType": "date",
+        "line": 245
+      },
+      {
+        "type": "input",
+        "label": "Search users...",
+        "inputType": "text",
+        "placeholder": "Search users...",
+        "line": 253
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 267
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 270
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 279
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 282
+      },
+      {
+        "type": "input",
+        "label": "Add notes (optional)...",
+        "inputType": "text",
+        "placeholder": "Add notes (optional)...",
+        "line": 283
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 292
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 295
+      },
+      {
+        "type": "input",
+        "label": "Add notes (optional)...",
+        "inputType": "text",
+        "placeholder": "Add notes (optional)...",
+        "line": 296
+      },
+      {
+        "type": "input",
+        "label": "Add new checklist item...",
+        "inputType": "text",
+        "placeholder": "Add new checklist item...",
+        "line": 308
+      },
+      {
+        "type": "form",
+        "label": "form",
+        "line": 205
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 175
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "Export",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "Create Record",
+        "line": 183
+      },
+      {
+        "type": "button",
+        "label": "Back to Editor",
+        "line": 197
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 272
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 285
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 298
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 325
+      },
+      {
+        "type": "button",
+        "label": "Changes",
+        "line": 328
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Enter record name",
+        "inputType": "text",
+        "placeholder": "Enter record name",
+        "line": 216
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 228
+      },
+      {
+        "type": "input",
+        "label": "date",
+        "inputType": "date",
+        "line": 245
+      },
+      {
+        "type": "input",
+        "label": "Search users...",
+        "inputType": "text",
+        "placeholder": "Search users...",
+        "line": 253
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 267
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 270
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 279
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 282
+      },
+      {
+        "type": "input",
+        "label": "Add notes (optional)...",
+        "inputType": "text",
+        "placeholder": "Add notes (optional)...",
+        "line": 283
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 292
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 295
+      },
+      {
+        "type": "input",
+        "label": "Add notes (optional)...",
+        "inputType": "text",
+        "placeholder": "Add notes (optional)...",
+        "line": 296
+      },
+      {
+        "type": "input",
+        "label": "Add new checklist item...",
+        "inputType": "text",
+        "placeholder": "Add new checklist item...",
+        "line": 308
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 24,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "22da64dbd0df4351bb2e62f1c3fc23fa",
+    "screenTitle": "Insights - CheckRibbon Mini",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Operations",
+        "href": "#",
+        "line": 131
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 135
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 139
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 143
+      },
+      {
+        "type": "link",
+        "label": "Help",
+        "href": "#",
+        "line": 150
+      },
+      {
+        "type": "link",
+        "label": "Status",
+        "href": "#",
+        "line": 154
+      },
+      {
+        "type": "link",
+        "label": "REC-9021 Validation failed on step 4",
+        "href": "#",
+        "line": 309
+      },
+      {
+        "type": "link",
+        "label": "REC-8842 Missing required signatures",
+        "href": "#",
+        "line": 316
+      },
+      {
+        "type": "link",
+        "label": "REC-8801 Sync timeout with external DB",
+        "href": "#",
+        "line": 323
+      },
+      {
+        "type": "button",
+        "label": "Create Record",
+        "line": 124
+      },
+      {
+        "type": "button",
+        "label": "Create",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "Export Summary",
+        "line": 181
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 185
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 188
+      },
+      {
+        "type": "button",
+        "label": "Export",
+        "line": 207
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 262
+      },
+      {
+        "type": "button",
+        "label": "View All",
+        "line": 336
+      },
+      {
+        "type": "input",
+        "label": "Search...",
+        "inputType": "text",
+        "placeholder": "Search...",
+        "line": 173
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Operations",
+        "href": "#",
+        "line": 131
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 135
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 139
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 143
+      },
+      {
+        "type": "link",
+        "label": "Help",
+        "href": "#",
+        "line": 150
+      },
+      {
+        "type": "link",
+        "label": "Status",
+        "href": "#",
+        "line": 154
+      },
+      {
+        "type": "link",
+        "label": "REC-9021 Validation failed on step 4",
+        "href": "#",
+        "line": 309
+      },
+      {
+        "type": "link",
+        "label": "REC-8842 Missing required signatures",
+        "href": "#",
+        "line": 316
+      },
+      {
+        "type": "link",
+        "label": "REC-8801 Sync timeout with external DB",
+        "href": "#",
+        "line": 323
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create Record",
+        "line": 124
+      },
+      {
+        "type": "button",
+        "label": "Create",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "Export Summary",
+        "line": 181
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 185
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 188
+      },
+      {
+        "type": "button",
+        "label": "Export",
+        "line": 207
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 262
+      },
+      {
+        "type": "button",
+        "label": "View All",
+        "line": 336
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search...",
+        "inputType": "text",
+        "placeholder": "Search...",
+        "line": 173
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 18,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "6f80bf8ef3fc40bbab8feb3f30ec478c",
+    "screenTitle": "Settings and Preferences - CheckRibbon Mini",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Operations",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 152
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 156
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 160
+      },
+      {
+        "type": "link",
+        "label": "Help",
+        "href": "#",
+        "line": 169
+      },
+      {
+        "type": "link",
+        "label": "Status",
+        "href": "#",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "Create Record",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 185
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 188
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 199
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 202
+      },
+      {
+        "type": "button",
+        "label": "Export",
+        "line": 205
+      },
+      {
+        "type": "button",
+        "label": "New",
+        "line": 251
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 269
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 270
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 277
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 278
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 285
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 286
+      },
+      {
+        "type": "button",
+        "label": "Reset to Defaults",
+        "line": 295
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 299
+      },
+      {
+        "type": "button",
+        "label": "Save Preferences",
+        "line": 302
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 314
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 223
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 233
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 239
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Operations",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 152
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 156
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 160
+      },
+      {
+        "type": "link",
+        "label": "Help",
+        "href": "#",
+        "line": 169
+      },
+      {
+        "type": "link",
+        "label": "Status",
+        "href": "#",
+        "line": 173
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create Record",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 185
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 188
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 199
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 202
+      },
+      {
+        "type": "button",
+        "label": "Export",
+        "line": 205
+      },
+      {
+        "type": "button",
+        "label": "New",
+        "line": 251
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 269
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 270
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 277
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 278
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 285
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 286
+      },
+      {
+        "type": "button",
+        "label": "Reset to Defaults",
+        "line": 295
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 299
+      },
+      {
+        "type": "button",
+        "label": "Save Preferences",
+        "line": 302
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 314
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 223
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 233
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 239
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 26,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "b43bf6560a964c44b950464823531a54",
+    "screenTitle": "Record Operations - CheckRibbon Mini",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Operations",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 150
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 154
+      },
+      {
+        "type": "link",
+        "label": "Help",
+        "href": "#",
+        "line": 161
+      },
+      {
+        "type": "link",
+        "label": "Status",
+        "href": "#",
+        "line": 165
+      },
+      {
+        "type": "button",
+        "label": "Create Record",
+        "line": 134
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "Export",
+        "line": 203
+      },
+      {
+        "type": "button",
+        "label": "Status: All",
+        "line": 268
+      },
+      {
+        "type": "button",
+        "label": "Date: Last 7 Days",
+        "line": 271
+      },
+      {
+        "type": "button",
+        "label": "chevron_left",
+        "line": 277
+      },
+      {
+        "type": "button",
+        "label": "chevron_right",
+        "line": 278
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 311
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 330
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 349
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 368
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 390
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 405
+      },
+      {
+        "type": "button",
+        "label": "View Logs",
+        "line": 453
+      },
+      {
+        "type": "button",
+        "label": "Re-run",
+        "line": 454
+      },
+      {
+        "type": "button",
+        "label": "Retry Load",
+        "line": 464
+      },
+      {
+        "type": "button",
+        "label": "Clear Filters",
+        "line": 476
+      },
+      {
+        "type": "input",
+        "label": "Search records, IDs...",
+        "inputType": "text",
+        "placeholder": "Search records, IDs...",
+        "line": 192
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 286
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 297
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 316
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 335
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 354
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 376
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Operations",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 150
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 154
+      },
+      {
+        "type": "link",
+        "label": "Help",
+        "href": "#",
+        "line": 161
+      },
+      {
+        "type": "link",
+        "label": "Status",
+        "href": "#",
+        "line": 165
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Create Record",
+        "line": 134
+      },
+      {
+        "type": "button",
+        "label": "sync",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "Export",
+        "line": 203
+      },
+      {
+        "type": "button",
+        "label": "Status: All",
+        "line": 268
+      },
+      {
+        "type": "button",
+        "label": "Date: Last 7 Days",
+        "line": 271
+      },
+      {
+        "type": "button",
+        "label": "chevron_left",
+        "line": 277
+      },
+      {
+        "type": "button",
+        "label": "chevron_right",
+        "line": 278
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 311
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 330
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 349
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 368
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 390
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 405
+      },
+      {
+        "type": "button",
+        "label": "View Logs",
+        "line": 453
+      },
+      {
+        "type": "button",
+        "label": "Re-run",
+        "line": 454
+      },
+      {
+        "type": "button",
+        "label": "Retry Load",
+        "line": 464
+      },
+      {
+        "type": "button",
+        "label": "Clear Filters",
+        "line": 476
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search records, IDs...",
+        "inputType": "text",
+        "placeholder": "Search records, IDs...",
+        "line": 192
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 286
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 297
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 316
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 335
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 354
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 376
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 31,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
