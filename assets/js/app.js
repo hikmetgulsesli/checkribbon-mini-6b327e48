@@ -435,18 +435,19 @@
   function render() {
     if (!stage || !settingsPanel || !statusBar) return;
 
-    // Preserve focus and text selection across re-renders.
-    var activeId = null;
-    var isTextEl = false;
+    var activeEl = document.activeElement;
+    var activeId = activeEl && typeof activeEl.getAttribute === 'function'
+      ? activeEl.getAttribute('data-action-id')
+      : null;
     var selectionStart = null;
     var selectionEnd = null;
-    var active = document.activeElement;
-    if (active && active.dataset && active.dataset.actionId) {
-      activeId = active.dataset.actionId;
-      isTextEl = (active.tagName === 'INPUT' && /^(text|search|url|tel|password|email)$/.test(active.type)) || active.tagName === 'TEXTAREA';
-      if (isTextEl && typeof active.selectionStart === 'number' && typeof active.selectionEnd === 'number') {
-        selectionStart = active.selectionStart;
-        selectionEnd = active.selectionEnd;
+    var isTextEl = activeEl && (activeEl.tagName === 'TEXTAREA' || (activeEl.tagName === 'INPUT' && /^(text|search|tel|url|password)$/i.test(activeEl.type)));
+    if (isTextEl) {
+      try {
+        selectionStart = activeEl.selectionStart;
+        selectionEnd = activeEl.selectionEnd;
+      } catch (e) {
+        // Ignore browser-specific exceptions.
       }
     }
 
